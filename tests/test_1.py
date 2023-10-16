@@ -44,15 +44,3 @@ def test_post_users_schema_validation():
     jsonschema.validate(response.json(), schema)
     assert response.json()['name'] == 'morpheus'
 
-def test_post_users_schema_validation2():
-    schema = load_schema("post_users.json")
-    response = requests.post(
-        url="https://reqres.in/api/users",
-        json={
-            "name": "morpheus",
-            "job": "leader"
-        }
-    )
-
-    assert response.status_code == 201
-    jsonschema.validate(response.json(), schema)
