@@ -1,7 +1,7 @@
 import jsonschema
 import requests
 
-from tests.utils import load_schema
+from utils import load_schema
 
 
 def test_get_users_statuscode_is_ok():
