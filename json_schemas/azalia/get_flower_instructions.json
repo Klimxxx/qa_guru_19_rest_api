@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "instruction": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "instruction",
+                "createdAt",
+                "updatedAt",
+                "title"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "attributes"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "instruction": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "instruction",
+                "createdAt",
+                "updatedAt",
+                "title"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "attributes"
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "pagination": {
+          "type": "object",
+          "properties": {
+            "page": {
+              "type": "integer"
+            },
+            "pageSize": {
+              "type": "integer"
+            },
+            "pageCount": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "page",
+            "pageSize",
+            "pageCount",
+            "total"
+          ]
+        }
+      },
+      "required": [
+        "pagination"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "meta"
+  ]
+}
